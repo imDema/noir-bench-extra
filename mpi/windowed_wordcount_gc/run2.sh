@@ -1,0 +1,1 @@
+time mpirun --mca btl_tcp_if_include 192.168.1.0/24 --mca oob_tcp_if_include 192.168.1.0/24 --mca btl_tcp_sndbuf 0 --mca btl_tcp_rcvbuf 0 -np 20 -H 192.168.1.10:12,192.168.1.30:8 ./main_separate_root -d ../../data/gutenberg40.txt

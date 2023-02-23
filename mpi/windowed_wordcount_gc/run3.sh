@@ -1,0 +1,1 @@
+time mpirun --mca btl_tcp_if_include 192.168.1.0/24 --mca oob_tcp_if_include 192.168.1.0/24 -mca btl_tcp_sndbuf 16777216 -mca btl_tcp_rcvbuf 16777216 -mca btl_tcp_eager_limit 100000 --mca mpi_yield_when_idle 1 -H 192.168.1.10:12,192.168.1.30:8 -display-map --map-by node ./main_three_steps -d /tmp/gutenberg40.txt
